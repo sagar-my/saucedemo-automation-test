@@ -22,6 +22,10 @@ public class InventoryPage {
     public void addBackpackToCart() {
         driver.findElement(backpackAddButton).click();
     }
+     public void addItemToCart(String itemName) {
+        By addToCartButton = By.xpath("//div[text()='" + itemName + "']/ancestor::div[@class='inventory_item']//button");
+        driver.findElement(addToCartButton).click();
+    }
 
     public void goToCart() {
         driver.findElement(cartIcon).click();
