@@ -15,12 +15,12 @@ public class LoginTest extends BaseTest {
 
         loginPage.login("standard_user", "secret_sauce");
 
-        // 👇 Add short pauses for visibility
-        Thread.sleep(2000); // Wait 2 seconds
+        
+        Thread.sleep(2000);
 
         Assert.assertTrue(inventoryPage.isInventoryPageDisplayed(),
                 "Login failed — Inventory page not displayed!");
 
-        Thread.sleep(2000); // Wait before closing
+        Thread.sleep(2000);
     }
 }
