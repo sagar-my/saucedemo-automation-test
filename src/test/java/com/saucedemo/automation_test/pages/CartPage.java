@@ -9,7 +9,7 @@ public class CartPage {
 
    // private By itemName = By.className("inventory_item_name");
     private By itemPrice = By.className("inventory_item_price");
-private By cartItems = By.className("inventory_item_name");
+    private By cartItems = By.className("inventory_item_name");
     public CartPage(WebDriver driver) {
         this.driver = driver;
     }
