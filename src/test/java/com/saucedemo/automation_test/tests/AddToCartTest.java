@@ -23,5 +23,6 @@ public class AddToCartTest extends BaseTest {
         cartPage.verifyCartDetails();
         Assert.assertTrue(cartPage.isItemInCart("Sauce Labs Backpack"), "Backpack not found in cart!");
         Assert.assertTrue(cartPage.isItemInCart("Sauce Labs Bike Light"), "Bike Light not found in cart!");
+        Thread.sleep(2000);
     }
 }

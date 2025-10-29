@@ -1,5 +1,8 @@
 package com.saucedemo.automation_test.pages;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -20,6 +23,7 @@ public class CartPage {
 
         Assert.assertEquals(name, "Sauce Labs Backpack", "Item name mismatch!");
         Assert.assertEquals(price, "$29.99", "Item price mismatch!");
+    }
         
         public boolean isItemInCart(String itemName) {
         List<String> items = driver.findElements(cartItems)
@@ -30,3 +34,4 @@ public class CartPage {
         return items.contains(itemName);
     }
 }
+
